@@ -1,0 +1,71 @@
+
+header{
+    background-color: #EAC926;
+    padding: 10px;
+   
+}
+header a{
+    
+    font-size: 16px;
+    color: black;
+}
+.compra-cuotas{
+    margin: 10px;
+    margin-left: 80px;
+}
+.nav-1{
+    margin: 2px;
+
+}
+.nav-2{
+    margin: 2px;
+    margin-top: 15px;
+}
+.burger-menu{
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 0 auto;
+    width: 30px;
+    padding: 5px;
+    background-color: #1259c3;
+    color: white;
+    border-radius: 4px;
+}
+
+.ofertas{
+    font-size: 24px;
+
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento{
+    font-size: 16px;
+}
+section h3{
+    font-size: 16px;
+}
+
+footer i{
+    text-align: center;
+  
+    align-items: center;
+    margin: 0 auto;
+   
+    font-size: 2em;
+    margin-top: 10px;
+    margin-left: 200px;
+    color: #1259c3;
+   
+}
+
+footer h3{
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+}
