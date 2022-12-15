@@ -1,7 +1,11 @@
+body{
+    background-color: #ebebeb;
 
+}
 header{
     background-color: #EAC926;
     padding: 10px;
+    
    
 }
 header a{
@@ -9,6 +13,7 @@ header a{
     font-size: 16px;
     color: black;
 }
+
 .compra-cuotas{
     margin: 10px;
     margin-left: 80px;
@@ -26,6 +31,7 @@ header a{
     align-items: center;
     font-size: 20px;
     margin: 0 auto;
+    
     width: 30px;
     padding: 5px;
     background-color: #1259c3;
@@ -33,20 +39,57 @@ header a{
     border-radius: 4px;
 }
 
+main{
+    width: 90vw;
+    align-items: center;
+    
+}
+section{
+    width: 90vw;
+    align-items: center;
+  
+}
+
+section h2{
+    color: #666;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+article{
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+}
 .ofertas{
+    color: #666;
     font-size: 24px;
 
 }
-
+.icono-cart{
+    color: #39b54a;
+}
 .precio{
     font-size: 18px;
+    
 }
 
 .descuento{
+    color: #39b54a;
     font-size: 16px;
 }
 section h3{
+    margin-bottom: 10px;
     font-size: 16px;
+
+}
+.article-footer{
+    margin-top: -3px;
+    
+    background-color: white;
+    border: solid 1px #ebebeb;
 }
 
 footer i{
@@ -68,4 +111,43 @@ footer h3{
 
 footer p{
     text-align: center;
+}
+
+.producto-shadow{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+@media(min-width:480px){
+    /*tablet*/
+    nav{
+        display: block;
+    }
+
+    .logo{
+        width: 50%;
+    }
+
+
+
+}
+
+@media(min-width:769px){
+    /*laptop*/
+    .producto-shadow{
+        box-shadow: none;
+    }
+
+    .description{
+        display: none;
+    }
+    
+
+
+}
+
+@media (min-width:1280px){
+    /*deskop*/
+    
+
 }
