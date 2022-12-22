@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normative.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header>
+      <div class="main-header">
+        <h1 class="logo">
+          <img  src="/img/logo-mercado-liebre.svg" alt="Mercado Liebre" />
+        </h1>
+        <p class="buscador">
+            <input type="search" name="busqueda" placeholder="Buscar productos, marcas">
+          <button><i class="fas fa-search"></i></button>
+        </p>
+        <p class="compra-cuotas"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de credito</p>
+      </div>
+        <nav>
+            <div class="nav-1">
+          <ul>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+        </div>
+        <div class="nav-2">
+          <ul>
+            <li><a href="/register">Crea tu cuenta</a> <i class="fas fa-id-card"></i></li>
+            <li><a href="#">Ingresá</a> <i class="fas fa-sign-in-alt"></i></li>
+            <li><a href="#">Mis Compras</a> <i class="fas fa-shopping-basket"></i></li>
+          </ul>
+        </div>
+        </nav>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+            </div>
+    </header>
+
+    <div class="formulario">
+      <form action="/registro" method="post">
+
+        <label for="nombre y apellido">Nombre y Apellido</label>
+        <input class="input" type="text" name="nombre y apellido" id="nombre y apellido">
+
+        <label for="nombreUsuario">Nombre de usuario:</label>
+        <input class="input" type="text" name="nombre de usuario" id="nombreUsuario">
+
+        <label for="email">Email:</label>
+        <input class="input" type="email" name="email" id="email">
+
+        <p class="titulo">Fecha de nacimiento</p>
+        <input  class="input" type="date" name="fecha">
+        
+
+        <label for="domicilio">Domicilio</label>
+        <input class="input" type="text" name="domicilio" id="domicilio">
+
+        <p class="titulo">Perfil usuario</p>
+        <input class="perfil-usuario"  type="radio" id="comprador" name="comprador" value="comprador">
+
+        <label class="perfil-usuario" for="comprador">Comprador</label>
+
+        <input  type="radio" id="Vendedor" name="Vendedor" value="Vendedor">
+
+        <label class="perfil-usuario"  for="Vendedor">Vendedor</label>
+
+        <p class="titulo">Intereses</p>
+        <input  type="checkbox" id="electro" name="electro" value="electro">
+        <label for="electro">Electro</label>
+
+        <input type="checkbox" id="moda" name="moda" value="moda">
+        <label for="electro">Moda</label>
+
+        <input class="input" type="checkbox" id="hogar" name="hogar" value="hogar">
+        <label for="hogar">Hogar</label>
+
+        <input type="checkbox" id="jugueteria" name="jugueteria" value="jugueteria">
+        <label for="jugueteria">Jugueteria</label>
+
+        <input type="checkbox" id="vidaSana" name="vida sana" value="vida sana">
+        <label for="vida sana">Vida sana</label>
+
+
+        <p><button type="submit">Registrarse</button></p>
+
+
+
+
+
+
+      </form>
+    </div>
+    
+
+
+
+    <footer>
+        <div>
+            <i class="fas fa-credit-card"></i>
+            <h3>Pagá con tarjeta o en efectivo</h3> 
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+             puntos de pago. ¡Y siempre es seguro!</p>
+         </div>
+         <div>
+            <i class="fas fa-gift"></i>
+             <h3>Envío gratis desde $ 2.500</h3> 
+             <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                 productos. Es un beneficio de Mercado Puntos.</p>
+         </div>
+         <div>
+            <i class="fas fa-user-shield"></i>
+            <h3>Seguridad, de principio a fin</h3> 
+             <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                 porque estás siempre protegid@.</p>
+         </div>
+         <div>
+             
+            <h3>Copyright © 1999-2020 MercadoLiebre S.R.L.</h3>
+          
+         </div>
+    </footer>
+
