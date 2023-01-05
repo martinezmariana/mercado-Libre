@@ -9,7 +9,7 @@ body{
 }
 header{
     background-color: #EAC926;
-    padding: 10px;
+    padding: 20px;
     
    
 }
@@ -18,10 +18,41 @@ header a{
     font-size: 16px;
     color: black;
 }
-
+.main-header{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo{
+  width: 200px;
+}
 .compra-cuotas{
-    margin: 10px;
-    margin-left: 80px;
+   font-weight: 400;
+   text-align: center;
+}
+
+.hide{
+  display: none;
+}
+.hide ul{
+  margin: 0;
+  padding: 0;
+}
+.hide a{
+  display: inline-block;
+  padding: 5px 0;
+  font-size: 17px;
+}
+.container-busqueda{
+  padding: 12px 14px;
+  box-shadow:  0px 1px 4px -1px #0e0e0e;
+}
+.busqueda{
+  min-width: 0;
+  margin-right: 2px;
+  flex-grow: 1;
+  border: none;
+  outline: none;
 }
 .bg-dark-grey {
     background-color: #666;
@@ -38,7 +69,9 @@ header a{
   .bg-white {
     background-color: white;
   }
-  
+  .color-azul{
+    color: #1259c3;
+  }
   .color-green {
     color: #39b54a;
   }
@@ -81,7 +114,9 @@ header a{
     border-style: solid;
     border-width: 1px;
   }
-  
+  .border{
+    border-top: 1px solid #ebebeb;
+  }
   .b-none {
     border: none;
   }
@@ -162,9 +197,6 @@ header a{
     outline: none;
   }
   
-  .hide {
-    display: none;
-  }
   
   .product-shadow {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -193,7 +225,8 @@ header a{
     top: -15px;
   }
   
-  .relative {
+  
+.relative {
     position: relative;
   }
 
@@ -211,74 +244,29 @@ header a{
     align-items: center;
     
 }
-
-/* registro*/
-.formulario{
-  display: inline-block;
-  
-  margin: auto;
-  margin-bottom: 10px;
-  background-color:rgb(226, 225, 225);
-  border-radius: 8px;
-  border: solid 4px rgb(100, 100, 100);
-  text-align: center;
-
-}
-.formulario label{
- display: block;
-  color: #222;
-}
-.input{
-  border-radius: 8px;
-  font-size: 20px;
-  border: solid 2px white;
-
-}
-.titulo{
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-}
-.perfil-usuario{
-  display: inline;
-  
-
-
-}
-
 .container-footer{
   width: 100%;
-  
-  align-items: center;
-  justify-content:flex-start;
-}
-
-footer i{
-    text-align: center;
-  
-    align-items: center;
+    max-width: 1200px;
     margin: 0 auto;
-   
-    font-size: 2em;
-    margin-top: 10px;
-    margin-left: 10px;
-    color: #1259c3;
-   
 }
-
-footer h3{
-    text-align: center;
+.info-footer{
+  margin-bottom: 30px;
+  text-align: center;
 }
-
-footer p{
-    text-align: center;
+.font-m{
+  font-size: 12px;
 }
+.inline-block{
+  display: inline-block;
+  
 
-
-
-
-
-
+}
+.m-auto{
+  margin: 0 auto;
+}
+.color-gris{
+  color: #666;
+}
 @media (min-width: 481px) {
     /* tablet */
     .md-w-50 {
@@ -290,6 +278,36 @@ footer p{
     /* laptop */
     .lg-w-25 {
       width: 23%;
+    }
+    .logo{
+      width: 30%;
+    }
+    .container-busqueda{
+      width: 35%;
+    }
+    
+    .main-header{
+      display: flex;
+      justify-content: space-between;
+    }
+    .compra-cuotas{
+      margin-top: 30px;
+      max-width: 350px;
+      text-align: right;
+    }
+    .fa-bars{
+      display: none;
+    }
+    .hide{
+      display: flex;
+      justify-content: space-between;
+
+    }
+    .hide ul{
+      display: flex;
+    }
+    .hide li{
+      margin: 0 5px;
     }
   
     .product-shadow {
@@ -308,23 +326,53 @@ footer p{
     .product-shadow:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .fa-bars{
-      display: none;
+    .container-footer{
+      margin-top: auto;
+      flex-direction: column;
     }
-    .hide{
-      display: inline-block;
+    .container-footer{
+      padding: 20px;
+      display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .info-footer{
+      width: 30%;
     }
     
-    .container-footer{
-      display: flex;
-      flex-direction: row;
-    }
 
   }
   
   @media (min-width: 1281px) {
     /* desktop */
-    
-    
+    .logo{
+      width: 250px;
+
+    }
+    .main-header , .hide{
+      max-width: 1200px;
+      margin: auto;
+
+    }
+    .compra-cuotas{
+      margin: 0;
+      max-width: none;
+      font-size: 22px;
+      font-weight: 400;
+
+    }
+    .hide li{
+      margin: 0 10px;
+    }
+    .hide a{
+      font-size: 19px;
+    }
+    .hide{
+      margin-top: 40px;
+    }
+    .main-header{
+      align-items: center;
+    }
   }
   

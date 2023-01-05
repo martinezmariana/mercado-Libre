@@ -191,18 +191,18 @@ main{
     padding: 10px;
 }
 
-
-
-
 .container-form{
-    width: 100%;
-    padding: 70px 30px 44px;
-    border-radius: 24px;
-    background-color: #ffffff;
-    text-align: center;
-    font-size: 20px;
-  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 18px;
 }
+
+
+
 .titulo{
     margin: 0 0 12;
     margin-bottom: 15px ;
@@ -211,10 +211,10 @@ main{
 
 }
 .register-form{
-    width: 100%;
-    margin: 0;
-    display: grid;
-    gap: 16px;
+  justify-content: space-between;
+    max-width: 450px;
+    padding: 18px;
+    
 }
 .register-form .input, .register-form button{
     width: 100%;
@@ -236,81 +236,156 @@ main{
 }
   
 .container-footer{
-    width: 100%;
-    
-    align-items: center;
-    justify-content:flex-start;
-}
-.container-footer i{
-    text-align: center;
-    
-    align-items: center;
+  width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-     
-    font-size: 2em;
-    margin-top: 10px;
-    margin-left: 10px;
-    color: #1259c3;
-     
 }
-  
-.container-footer h3{
-      text-align: center;
+.info-footer{
+  margin-bottom: 30px;
+  text-align: center;
 }
+.font-m{
+  font-size: 12px;
+}
+.inline-block{
+  display: inline-block;
   
-.container-footer p{
-      text-align: center;
+
+}
+.m-auto{
+  margin: 0 auto;
+}
+.color-gris{
+  color: #666;
+}
+.intereses{
+  margin: 0 auto;
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+}
+.intereses input, label{
+  display: block;
+  text-align: center;
+  align-items: center;
+} 
+.intereses input{
+  align-items: center;
+  text-align: center;
+  margin-left: 35px;
+}
+.intereses label{
+  align-items: center;
+  text-align: center;
+  margin-top: -10px;
 }  
+@media (min-width: 481px) {
+  /* tablet */
+  .md-w-50 {
+    width: 48%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* laptop */
+  .lg-w-25 {
+    width: 23%;
+  }
+  .logo{
+    width: 30%;
+  }
+  .container-busqueda{
+    width: 35%;
+  }
   
+  .main-header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .compra-cuotas{
+    margin-top: 30px;
+    max-width: 350px;
+    text-align: right;
+  }
+  .burger-menu{
+    display: none;
+  }
+  .hide{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .hide ul{
+    display: flex;
+  }
+  .hide li{
+    margin: 0 5px;
+  }
+
+  .product-shadow {
+    box-shadow: none;
+  }
+
+  .description {
+    display: none;
+  }
+
+
+  .product:hover .description{
+      display: block;
+  }
+
+  .product-shadow:hover {
+      box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+  .container-footer{
+    margin-top: auto;
+    flex-direction: column;
+  }
+  .container-footer{
+    padding: 20px;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  .info-footer{
+    width: 30%;
+  }
   
-  @media (min-width: 481px) {
-      /* tablet */
-      .md-w-50 {
-        width: 48%;
-      }
-      .body{
-        padding: 0;
-      }
-      .container-form{
-        margin: 0;
-        width: 500px;
-      }
-    }
-    
-    @media (min-width: 769px) {
-      /* laptop */
-      .lg-w-25 {
-        width: 23%;
-      }
-    
-      
-      .fa-bars{
-        display: none;
-      }
-      .hide{
-        display: inline-block;
-      }
-      
-      .container-footer{
-        display: flex;
-        flex-direction: row;
-      }
-      .body{
-        padding: 0;
-      }
-      .container-form{
-        margin: 0;
-        width: 400px;
-      }
-      .container-form{
-        margin: 0;
-        width: 70%;
-      }
+
+}
+
+@media (min-width: 1281px) {
+  /* desktop */
+  .logo{
+    width: 250px;
+
+  }
+  .main-header , .hide{
+    max-width: 1200px;
+    margin: auto;
+
+  }
+  .compra-cuotas{
+    margin: 0;
+    max-width: none;
+    font-size: 22px;
+    font-weight: 400;
+
+  }
+  .hide li{
+    margin: 0 10px;
+  }
+  .hide a{
+    font-size: 19px;
+  }
+  .hide{
+    margin-top: 40px;
+  }
+  .main-header{
+    align-items: center;
+  }
+}
   
-    }
-    
-    @media (min-width: 1281px) {
-      /* desktop */
-      
-      
-    }  
