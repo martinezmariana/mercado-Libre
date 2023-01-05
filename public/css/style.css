@@ -272,6 +272,15 @@ header a{
     .md-w-50 {
       width: 48%;
     }
+    .article-producto:hover .truck-icon {
+      animation: truck 0.5s 1;
+    }
+  
+    @keyframes truck {
+      0% {
+        transform: rotateZ(360deg);
+      }
+    }
   }
   
   @media (min-width: 769px) {
